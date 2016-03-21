@@ -1,10 +1,13 @@
+{% set version = "0.2.7" %}
+
 package:
   name: xonsh
-  version: "0.2.5"
+  version: {{ version }}
 
 source:
-  url: https://github.com/scopatz/xonsh/archive/0.2.5.tar.gz
-  fn: xonsh_0.2.5.tar.gz
+  fn: xonsh-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/source/x/xonsh/xonsh-{{ version }}.tar.gz
+  md5: b810500337fb43b21a03146cdf30d6b5
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
