@@ -35,11 +35,15 @@ test:
   commands:
     - xonsh -h
 
+app:
+  entry: xonsh
+  icon: xonsh.png
+
 about:
   home: http://xonsh.org/
   license: BSD
   summary: xonsh is a Python-ish, BASHwards-facing shell.
-
+  
 extra:
   recipe-maintainers:
     - scopatz
