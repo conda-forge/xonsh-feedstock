@@ -25,7 +25,8 @@ requirements:
   run:
     - python
     - ply
-    - prompt_toolkit  # [win]
+    - prompt_toolkit # [win]
+    - pygments # [win]
     - setproctitle
 
 test:
