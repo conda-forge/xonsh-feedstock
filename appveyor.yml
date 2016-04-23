@@ -53,7 +53,7 @@ install:
     - cmd: conda config --add channels http://conda.binstar.org/conda-forge
     - cmd: conda info
     - cmd: conda install -n root --quiet --yes conda-build anaconda-client jinja2 setuptools
-    - cmd: if "%TARGET_ARCH%" == "x64" if "%CONDA_PY%" == "34" conda install conda-build=1.20.0
+    - cmd: if "%TARGET_ARCH%" == "x64" if "%CONDA_PY%" == "34" conda install conda-build=1.20.0 --yes
 
 # Skip .NET project specific build phase.
 build: off
