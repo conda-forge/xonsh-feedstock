@@ -21,11 +21,6 @@ environment:
 
   matrix:
     - TARGET_ARCH: x86
-      CONDA_PY: 27
-    - TARGET_ARCH: x64
-      CONDA_PY: 27
-
-    - TARGET_ARCH: x86
       CONDA_PY: 34
     - TARGET_ARCH: x64
       CONDA_PY: 34
@@ -42,6 +37,16 @@ platform:
     - x64
 
 install:
+    # If there is a newer build queued for the same PR, cancel this one.
+    # The AppVeyor 'rollout builds' option is supposed to serve the same
+    # purpose but it is problematic because it tends to cancel builds pushed
+    # directly to master instead of just PR builds (or the converse).
+    # credits: JuliaLang developers.
+    - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER -and $env:APPVEYOR_BUILD_NUMBER -ne ((Invoke-RestMethod `
+        https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/$env:APPVEYOR_PROJECT_SLUG/history?recordsNumber=50).builds | `
+        Where-Object pullRequestId -eq $env:APPVEYOR_PULL_REQUEST_NUMBER)[0].buildNumber) { `
+          throw "There are newer queued builds for this pull request, failing early." }
+
     # Cywing's git breaks conda-build. (See https://github.com/conda-forge/conda-smithy-feedstock/pull/2.)
     - cmd: rmdir C:\cygwin /s /q
     - appveyor DownloadFile "https://raw.githubusercontent.com/pelson/Obvious-CI/master/bootstrap-obvious-ci-and-miniconda.py"
@@ -49,6 +54,7 @@ install:
     - cmd: set PATH=%CONDA_INSTALL_LOCN%;%CONDA_INSTALL_LOCN%\scripts;%PATH%
     - cmd: set PYTHONUNBUFFERED=1
 
+    - cmd: conda config --set show_channel_urls true
     - cmd: conda install -c http://conda.binstar.org/pelson/channel/development --yes --quiet obvious-ci
     - cmd: conda config --add channels http://conda.binstar.org/conda-forge
     - cmd: conda info
