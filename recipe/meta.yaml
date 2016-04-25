@@ -14,6 +14,7 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
   skip: True  # [py2k]
+  number: 0
 
 requirements:
   build:
@@ -24,7 +25,8 @@ requirements:
   run:
     - python
     - ply
-    - prompt_toolkit  # [win]
+    - prompt_toolkit
+    - pygments
     - setproctitle
 
 test:
@@ -35,11 +37,15 @@ test:
   commands:
     - xonsh -h
 
+app:
+  entry: xonsh
+  icon: xonsh.png
+
 about:
   home: http://xonsh.org/
   license: BSD
   summary: xonsh is a Python-ish, BASHwards-facing shell.
-
+  
 extra:
   recipe-maintainers:
     - scopatz
