@@ -42,7 +42,7 @@ app:
   icon: xonsh.png
 
 about:
-  home: http://xonsh.org/
+  home: http://xon.sh
   license: BSD
   summary: xonsh is a Python-ish, BASHwards-facing shell.
   
