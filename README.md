@@ -1,7 +1,7 @@
 About xonsh
 ===========
 
-Home: http://xonsh.org/
+Home: http://xon.sh
 
 Package license: BSD
 
