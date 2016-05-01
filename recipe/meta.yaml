@@ -55,7 +55,7 @@ about:
     including Linux, Mac OSX, and Windows. Xonsh is meant for the daily use 
     of experts and novices alike.
   doc_url: http://xon.sh
-  dev_url: http://github.com/scopatz/xonsh
+  dev_url: https://github.com/scopatz/xonsh
 
 extra:
   recipe-maintainers:
