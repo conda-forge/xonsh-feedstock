@@ -35,7 +35,8 @@ test:
   imports:
     - xonsh
   commands:
-    - xonsh -h
+    - USER=test xonsh -h  # [unix]
+    - xonsh -h  # [win]
 
 app:
   entry: xonsh
