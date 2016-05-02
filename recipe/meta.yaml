@@ -46,7 +46,7 @@ app:
 
 about:
   home: http://xon.sh
-  license: BSD
+  license: BSD 2-Clause
   summary: xonsh is a Python-ish, BASHwards-facing shell.
   description: |
     Xonsh is a Python-ish, BASHwards-looking shell language and command prompt.
