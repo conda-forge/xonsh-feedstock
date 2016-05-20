@@ -1,4 +1,4 @@
-{% set version = "0.2.7" %}
+{% set version = "0.3.0" %}
 
 package:
   name: xonsh
@@ -7,7 +7,7 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://pypi.python.org/packages/source/x/xonsh/xonsh-{{ version }}.tar.gz
-  md5: b810500337fb43b21a03146cdf30d6b5
+  md5: e56e757ac046027401dda84bc5575e25
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
@@ -50,9 +50,9 @@ about:
   summary: xonsh is a Python-ish, BASHwards-facing shell.
   description: |
     Xonsh is a Python-ish, BASHwards-looking shell language and command prompt.
-    The language is a superset of Python 3.4+ with additional shell primitives 
-    that you are used to from Bash and IPython. It works on all major systems 
-    including Linux, Mac OSX, and Windows. Xonsh is meant for the daily use 
+    The language is a superset of Python 3.4+ with additional shell primitives
+    that you are used to from Bash and IPython. It works on all major systems
+    including Linux, Mac OSX, and Windows. Xonsh is meant for the daily use
     of experts and novices alike.
   doc_url: http://xon.sh
   dev_url: https://github.com/scopatz/xonsh
