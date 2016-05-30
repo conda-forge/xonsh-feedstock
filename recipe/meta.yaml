@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: xonsh
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: xonsh-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/81/0d/4c35374627be83ca308937dd97f8d5914689139e10c32f4c81cb4396a174/xonsh-{{ version }}.tar.gz
-  md5: 60a7206dc6a5155d988b1ce5aa5d81f0
+  url: https://pypi.python.org/packages/3b/f7/7eca16ebb7a48f667760e50fb1722465c3dbe9bda22afcc9fe8314c7f0c5/xonsh-{{ version }}.tar.gz
+  md5: 4479c204bbae46bdcb2dedaca4b65ac3
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
