@@ -1,13 +1,13 @@
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 
 package:
   name: xonsh
   version: {{ version }}
 
 source:
-  fn: xonsh-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/f0/7a/2f8f3af39e2ad04dbb84349a35d1270aadfa54661e84e98f661166b404af/xonsh-0.3.4.tar.gz
-  md5: 932ccf219d86b02128875280a49a6236
+  fn: xonsh-{{ version }}-1.tar.gz
+  url: https://pypi.python.org/packages/cd/4a/5dc219c9ca071f8383cef313ffe3e7a04d531582b05ca9aac63a759d1f60/xonsh-0.4.0-1.tar.gz
+  md5: 4878f2553130aee7b88617fb139243b3
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
@@ -31,7 +31,7 @@ requirements:
 
 test:
   requires:
-    - nose
+    - pytest
   imports:
     - xonsh
   commands:
