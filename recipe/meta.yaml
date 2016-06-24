@@ -5,9 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  fn: xonsh-{{ version }}-1.tar.gz
-  url: https://pypi.python.org/packages/cd/4a/5dc219c9ca071f8383cef313ffe3e7a04d531582b05ca9aac63a759d1f60/xonsh-0.4.0-1.tar.gz
-  md5: 4878f2553130aee7b88617fb139243b3
+  fn: xonsh-{{ version }}.tar.gz
+  url: https://github.com/xonsh/xonsh/archive/{{ version }}.tar.gz
+  sha256: a7fdf3573946d129775b4759c0247473d26d97c98d89ba0fee59eb094d386f1a
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
