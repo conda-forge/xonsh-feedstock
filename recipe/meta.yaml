@@ -14,7 +14,7 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
   skip: True  # [py2k]
-  number: 0
+  number: 1
 
 requirements:
   build:
