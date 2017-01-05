@@ -14,14 +14,14 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
   skip: True  # [py2k]
-  number: 1
+  number: 2
 
 requirements:
   build:
     - python
     - ply
     - setuptools
-    - jupyter
+    - jupyter_client
   run:
     - python
     - ply
