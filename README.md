@@ -7,14 +7,26 @@ Package license: BSD 2-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: xonsh is a Python-ish, BASHwards-facing shell.
+Summary: Python-powered, cross-platform, Unix-gazing shell
 
-Xonsh is a Python-ish, BASHwards-looking shell language and command prompt.
-The language is a superset of Python 3.4+ with additional shell primitives
-that you are used to from Bash and IPython. It works on all major systems
-including Linux, Mac OSX, and Windows. Xonsh is meant for the daily use
-of experts and novices alike.
+Xonsh is a Python-powered, cross-platform, Unix-gazing shell shell language
+and command prompt. The language is a superset of Python 3.4+ with additional
+shell primitives that you are used to from Bash and IPython. It works on all
+major systems including Linux, Mac OSX, and Windows. Xonsh is meant for the
+daily use of experts and novices alike.
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xonsh-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xonsh-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/xonsh-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xonsh-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xonsh-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xonsh-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xonsh/badges/version.svg)](https://anaconda.org/conda-forge/xonsh)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xonsh/badges/downloads.svg)](https://anaconda.org/conda-forge/xonsh)
 
 Installing xonsh
 ================
@@ -36,7 +48,6 @@ It is possible to list all of the versions of `xonsh` available on your platform
 ```
 conda search xonsh --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -72,18 +83,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xonsh-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xonsh-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xonsh-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xonsh-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xonsh-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xonsh-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xonsh/badges/version.svg)](https://anaconda.org/conda-forge/xonsh)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xonsh/badges/downloads.svg)](https://anaconda.org/conda-forge/xonsh)
 
 
 Updating xonsh-feedstock
