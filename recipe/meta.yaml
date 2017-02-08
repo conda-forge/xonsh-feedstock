@@ -7,7 +7,7 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://github.com/xonsh/xonsh/archive/{{ version }}.tar.gz
-  sha256: 17fff500d25b0afca77d419109835d683d4c1e38afe5251d813e50ffc3fe14c8
+  sha256: 878f57da4bbb8e67f0a83b910fd175f54c99bb1b5e652c7d039e72020c8d0e25
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
