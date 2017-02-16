@@ -1,4 +1,4 @@
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: xonsh
@@ -7,7 +7,7 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://github.com/xonsh/xonsh/archive/{{ version }}.tar.gz
-  sha256: 878f57da4bbb8e67f0a83b910fd175f54c99bb1b5e652c7d039e72020c8d0e25
+  sha256: 3fbf17d092cccf84e2e5534aefa71401b94b53a039705d649da69bb1fb82f935
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
