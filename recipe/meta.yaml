@@ -38,11 +38,6 @@ test:
     - USER=test xonsh -h  # [unix]
     - xonsh -h  # [win]
 
-app:
-  entry: xonsh
-  icon: xonsh.png
-  summary: Python-powered, cross-platform, Unix-gazing shell
-  type: desk
 
 about:
   home: http://xon.sh
