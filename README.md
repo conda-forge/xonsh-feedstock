@@ -19,14 +19,16 @@ daily use of experts and novices alike.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xonsh-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xonsh-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xonsh-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xonsh-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/xonsh-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/xonsh-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xonsh-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xonsh-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/xonsh-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xonsh-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/xonsh-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/xonsh-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xonsh/badges/version.svg)](https://anaconda.org/conda-forge/xonsh)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/xonsh/badges/downloads.svg)](https://anaconda.org/conda-forge/xonsh)
+
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh)
 
 Installing xonsh
 ================
