@@ -26,9 +26,9 @@ Current build status
 Current release info
 ====================
 
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh)
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-xonsh-green.svg)](https://anaconda.org/conda-forge/xonsh) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/xonsh.svg)](https://anaconda.org/conda-forge/xonsh) |
 
 Installing xonsh
 ================
