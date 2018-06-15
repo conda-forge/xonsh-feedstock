@@ -6,7 +6,7 @@ package:
 
 source:
   fn: xonsh-{{ version }}.tar.gz
-  url: https://github.com/xonsh/xonsh/archive/{{ version }}.tar.gz
+  url: https://github.com/xonsh/xonsh/releases/download/{{ version }}/{{ version }}.tar.gz
   sha256: 13c5dafda93172508dc338d6d9197521f6478d6d868109cd94698e68be473333
 
 build:
