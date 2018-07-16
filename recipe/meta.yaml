@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - ply
-    - prompt_toolkit <2.0
+    - prompt_toolkit
     - pygments
     - setproctitle
     - pyreadline  # [win]
