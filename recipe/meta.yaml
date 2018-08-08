@@ -14,7 +14,7 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
   skip: True  # [py2k]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -26,7 +26,7 @@ requirements:
     - python
     - ply
     - prompt_toolkit
-    - pygments
+    - pygments >=2.2
     - setproctitle
     - pyreadline  # [win]
 
