@@ -1,4 +1,4 @@
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: xonsh
@@ -7,14 +7,15 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://github.com/xonsh/xonsh/releases/download/{{ version }}/{{ version }}.tar.gz
-  sha256: ae36f3d0e2edf7d000729890876e320ec4c0e68eadab0383b9c44fe5cb93ea42
+  sha256: a58dcd05d9ca5146a5e570314e10341571149082d4b28cc8d2fbc0e32798dfe4
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
   entry_points:
     - xonsh = xonsh.main:main
+    - xonsh-cat = xonsh.xoreutils.cat:cat_main
   skip: True  # [py2k]
-  number: 1
+  number: 0
 
 requirements:
   build:
