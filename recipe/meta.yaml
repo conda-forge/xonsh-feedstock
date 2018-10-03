@@ -15,7 +15,7 @@ build:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
   skip: True  # [py2k]
-  number: 0
+  number: 1000
 
 requirements:
   build:
