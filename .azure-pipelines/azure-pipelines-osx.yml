@@ -37,7 +37,7 @@ jobs:
   - script: |
       set -x -e
       export PATH=$(Build.StagingDirectory)/miniconda/bin:$PATH
-      conda install --yes conda-forge::conda-forge-ci-setup=2
+      conda install --quiet --yes conda-forge::conda-forge-ci-setup=2
     displayName: 'Add conda-forge-ci-setup=2'
 
   - script: |
@@ -49,7 +49,7 @@ jobs:
       setup_conda_rc ./ ./recipe ./.ci_support/${CONFIG}.yaml
 
       source run_conda_forge_build_setup
-      conda update --yes --override-channels -c conda-forge -c defaults --all
+      conda update --quiet --yes --override-channels -c conda-forge -c defaults --all
     env: {
       OSX_FORCE_SDK_DOWNLOAD: "1"
     }
