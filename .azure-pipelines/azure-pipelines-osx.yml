@@ -13,9 +13,10 @@ jobs:
       OSX_FORCE_SDK_DOWNLOAD: "1"
     }
   steps:
-    # TODO: Fast finish on azure pipelines?
-    - script: |
-        
+  # TODO: Fast finish on azure pipelines?
+  - script: |
+      echo "Fast Finish"
+      
 
   - script: |
       echo "Removing homebrew from Travis CI to avoid conflicts."
