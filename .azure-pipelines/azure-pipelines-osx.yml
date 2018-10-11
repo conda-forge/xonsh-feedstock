@@ -9,9 +9,7 @@ jobs:
         CONFIG: osx_python3.6
       osx_python3.7:
         CONFIG: osx_python3.7
-    env: {
-      OSX_FORCE_SDK_DOWNLOAD: "1"
-    }
+
   steps:
   # TODO: Fast finish on azure pipelines?
   - script: |
@@ -40,6 +38,9 @@ jobs:
       set -x -e
       export PATH=$(Build.StagingDirectory)/miniconda/bin:$PATH
       conda install --yes conda-forge::conda-forge-ci-setup=2
+    env: {
+      OSX_FORCE_SDK_DOWNLOAD: "1"
+    }
     displayName: 'Add conda-forge-ci-setup=2'
 
   - script: |
