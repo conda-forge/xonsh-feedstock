@@ -1,6 +1,8 @@
 About xonsh
 ===========
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: http://xon.sh
 
 Package license: BSD 2-Clause
@@ -109,3 +111,13 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@gforsyth](https://github.com/gforsyth/)
+* [@melund](https://github.com/melund/)
+* [@mitnk](https://github.com/mitnk/)
+* [@ocefpaf](https://github.com/ocefpaf/)
+* [@scopatz](https://github.com/scopatz/)
+
