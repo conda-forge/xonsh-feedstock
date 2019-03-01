@@ -15,17 +15,15 @@ build:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
   skip: True  # [py2k]
-  number: 0
+  number: 1
 
 requirements:
   build:
     - python
-    - ply
     - setuptools
     - jupyter_client
   run:
     - python
-    - ply
     - prompt_toolkit
     - pygments >=2.2
     - setproctitle
