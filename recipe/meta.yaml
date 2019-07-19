@@ -42,6 +42,8 @@ test:
 about:
   home: http://xon.sh
   license: BSD 2-Clause
+  license_family: BSD
+  license_file: license
   summary: Python-powered, cross-platform, Unix-gazing shell
   description: |
     Xonsh is a Python-powered, cross-platform, Unix-gazing shell shell language
