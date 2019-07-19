@@ -1,4 +1,4 @@
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 
 package:
   name: xonsh
@@ -7,7 +7,7 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://github.com/xonsh/xonsh/releases/download/{{ version }}/xonsh-{{ version }}.tar.gz
-  sha256: 85bf43496bb20825912214fe85d9bad8fe9fbb90c5971402df723f487cc95680
+  sha256: a26d4bbd49b106b0c650dc8ebc5f4948900fe1e18204e1af2887a572af6fad44
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
@@ -42,6 +42,8 @@ test:
 about:
   home: http://xon.sh
   license: BSD 2-Clause
+  license_family: BSD
+  license_file: license
   summary: Python-powered, cross-platform, Unix-gazing shell
   description: |
     Xonsh is a Python-powered, cross-platform, Unix-gazing shell shell language
