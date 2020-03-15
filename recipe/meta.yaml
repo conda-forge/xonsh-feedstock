@@ -18,7 +18,7 @@ build:
   number: 1
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - jupyter_client
@@ -37,7 +37,6 @@ test:
   commands:
     - USER=test xonsh -h  # [unix]
     - xonsh -h  # [win]
-
 
 about:
   home: http://xon.sh
