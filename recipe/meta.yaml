@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - python
-    - setuptools
+    - pip
     - jupyter_client
   run:
     - python
