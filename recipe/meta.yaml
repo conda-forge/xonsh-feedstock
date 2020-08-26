@@ -10,7 +10,7 @@ source:
   sha256: 4d271fc11b527121d97a72961181cf76974bbf31c5f1e7e55604639cc6db918d
 
 build:
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"  # [not win]
   entry_points:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main

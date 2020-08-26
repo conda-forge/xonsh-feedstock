@@ -7,4 +7,5 @@ if errorlevel 1 exit 1
 copy %RECIPE_DIR%\menu-windows.json %MENU_DIR%\xonsh_shortcut.json
 if errorlevel 1 exit 1
 
-python setup.py install --single-version-externally-managed --record=record.txt
+%PYTHON% -m pip install . -vv
+if errorlevel 1 exit 1
