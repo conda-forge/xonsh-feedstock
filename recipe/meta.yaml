@@ -10,7 +10,7 @@ source:
   sha256: 4d271fc11b527121d97a72961181cf76974bbf31c5f1e7e55604639cc6db918d
 
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt  # [not win]
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
@@ -40,7 +40,7 @@ test:
 
 about:
   home: http://xon.sh
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_family: BSD
   license_file: license
   summary: Python-powered, cross-platform, Unix-gazing shell
