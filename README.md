@@ -5,9 +5,13 @@ Home: http://xon.sh
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xonsh-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python-powered, cross-platform, Unix-gazing shell
+
+Development: https://github.com/xonsh/xonsh
+
+Documentation: http://xon.sh
 
 Xonsh is a Python-powered, cross-platform, Unix-gazing shell shell language
 and command prompt. The language is a superset of Python 3.4+ with additional
