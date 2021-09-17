@@ -30,7 +30,6 @@ requirements:
     - prompt_toolkit
     - pygments >=2.2
     - setproctitle
-    - pyreadline  # [win]
     - conda-suggest
 
 test:
