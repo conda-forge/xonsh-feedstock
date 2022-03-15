@@ -15,7 +15,7 @@ build:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
   skip: true  # [py2k]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -29,6 +29,7 @@ requirements:
     - python
     - prompt_toolkit
     - pygments >=2.2
+    - pyperclip
     - setproctitle
     - conda-suggest
 
