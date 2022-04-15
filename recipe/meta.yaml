@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: xonsh
@@ -7,7 +7,7 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://github.com/xonsh/xonsh/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 9d73273276996297920c234c7d4267a305c695f0e9e2454dbdf0655c3a8f75cb
+  sha256: 79dcb33dc201e3497f73f5d343dd7d7ed73512a2a914f29e4351e3d3ba0b3e59
 
 build:
   script: {{ PYTHON }} -m pip install . -vv  # [not win]
@@ -15,7 +15,7 @@ build:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
   skip: true  # [py2k]
-  number: 1
+  number: 0
 
 requirements:
   build:
