@@ -15,7 +15,7 @@ build:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
   number: 0
-  skip: true  # [py<38]
+  skip: true  # [py<39]
 
 requirements:
   build:
