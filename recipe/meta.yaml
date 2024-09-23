@@ -14,7 +14,7 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
-  number: 0
+  number: 1
   skip: true  # [py<39]
 
 requirements:
@@ -31,7 +31,6 @@ requirements:
     - pygments >=2.2
     - pyperclip
     - setproctitle
-    - conda-suggest
 
 test:
   requires:
