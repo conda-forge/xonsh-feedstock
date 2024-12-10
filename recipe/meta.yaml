@@ -1,4 +1,4 @@
-{% set version = "0.18.4" %}
+{% set version = "0.19.0" %}
 
 package:
   name: xonsh
@@ -7,7 +7,7 @@ package:
 source:
   fn: xonsh-{{ version }}.tar.gz
   url: https://github.com/xonsh/xonsh/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0e583cd64c0e17bc8ffd16701264622569c4e6c770ee7d769884d1957729a564
+  sha256: 59e21c124de3b9802e3027253aedf8e1e9acefab630db52d165ba67d1d7f6afa
 
 build:
   script: {{ PYTHON }} -m pip install . -vv  # [not win]
