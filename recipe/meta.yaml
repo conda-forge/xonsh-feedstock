@@ -25,6 +25,7 @@ requirements:
     - python
     - pip
     - jupyter_client
+    - setuptools
   run:
     - python
     - prompt_toolkit
