@@ -14,7 +14,7 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
-  number: 0
+  number: 1
   skip: true  # [py<39]
 
 requirements:
@@ -25,6 +25,7 @@ requirements:
     - python
     - pip
     - jupyter_client
+    - setuptools
   run:
     - python
     - prompt_toolkit
