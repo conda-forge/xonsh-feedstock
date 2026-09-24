@@ -14,7 +14,7 @@ build:
   entry_points:
     - xonsh = xonsh.main:main
     - xonsh-cat = xonsh.xoreutils.cat:cat_main
-  number: 0
+  number: 1
   skip: true  # [py<311]
 
 requirements:
